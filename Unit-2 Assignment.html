@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WDV221 Intro Javascript - Variables and Data Types Assignment</title>
+
+<style>
+
+body {background-color:#FC6;
+}
+
+.highlightTitle	{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-style:italic;
+	font-size:14px;
+	text-decoration:underline;
+	color:#096;
+}
+
+
+</style>
+</head>
+
+<body>
+<h2>WDV221 Intro Javascript</h2>
+<h3>Unit-2 - Variables Assignment</h3>
+<hr />
+<p>Please complete the following exercises on this page. When complete post this page to your  server. Make a link in your WDV221 homework  page for this assignment.</p>
+<p>Submt this assignment on Blackboard. Please include a link to your homework page.</p>
+<h3>For each exercise use a comment line to put the Exercise number within the script. Also place a short description of what the script is doing.</h3>
+<hr />
+<script>
+var schoolName = "DMACC"; //1
+var courseName = "WDV221 Intro JavaScript"; //2
+var testScore = 100.00; //3
+var courseGrade; //4
+var courseCompleted = false; //5
+document.write("<p>" + schoolName + "</p>"); //6
+document.write("<p>" + courseName + "</p>");
+document.write("<p>" + testScore + "</p>");
+document.write("<p>" + courseGrade + "</p>");
+document.write("<p>" + courseCompleted + "</p>");
+document.write(courseName.length); //7
+document.write(courseName.toUpperCase()); //8
+if (courseName.includes('WDV')) { //9
+	document.write(true)
+}
+else { 
+	document.write(false)
+}
+</script>
+<p>Display the number of characters in the course name.</p>
+<p>Display the course name as all uppercase letters.</p>
+<p>Using the String Object determine if the course name contains the letters WDV?  Look at the String methods. Does one or more of them look inside the variable for specific content?</p>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
