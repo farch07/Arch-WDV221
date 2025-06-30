@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WDV221 Intro Javascript - Operators and Textfields Assignment</title>
+
+<style>
+
+body {background-color:#d5c2c2;
+}
+
+.highlightTitle	{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-style:italic;
+	font-size:14px;
+	text-decoration:underline;
+	color:#096;
+}
+
+
+</style>
+
+
+<script>
+	var count = 0;	
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</head>
+
+<body>
+<h2>WDV221 Intro Javascript</h2>
+<h3>Unit-6 Operators and Textfields - Assignment</h3>
+<hr />
+<p>Please complete the following exercises on this page. When complete post this page to your  server. Make a link in your WDV221 homework  page for this assignment. </p>
+<p>Include a comment in each script with the exercise number and a description of what the script is supposed to do.</p>
+<p>Using Blackboard submit this  Assignment.</p>
+<hr />
+<h3>Instructions</h3>
+
+<script>
+  function value1Func(value1, value1Output) {
+    event.preventDefault()
+    value1Output.value = value1.value;
+    return false;
+  }
+
+  function value2Func(value2, value2Output) {
+    event.preventDefault()
+    value2Output.value = value2.value;
+    return false;
+  }
+
+  function multiplyFunc(value1, value2, multiplyOutput) {
+    event.preventDefault()
+    var valuesMultiplied = value1.value * value2.value;
+    multiplyOutput.value = valuesMultiplied;
+    return false;
+  }
+
+  function addFunc(value1, value2, addOutput) {
+    event.preventDefault()
+    var valuesAdded = parseInt(value1.value) + parseInt(value2.value);
+    addOutput.value = valuesAdded;
+    return false;
+  }
+
+  function incrementCount(countOutput) {
+    event.preventDefault()
+    countOutput.value = count++;
+    return false;
+  }
+</script>
+
+
+<p>Use the form fields for the input values. For each of the following exercises create a function what will be activated by the button. Do not forget our discussion on button types. </p>
+<form name="form1" method="post" action="">
+  <p>Enter a number for value1:
+    <input type="text" id="value1"/>
+  </p>
+  <p>Enter a number for value2:
+    <input type="text" id="value2"/>
+  </p>
+  <p>1.
+    <input type="submit" value="Display value1" onclick="value1Func(document.getElementById('value1'), document.getElementById('value1Output'))"/>
+    Display the value you entered for value1:
+  <input type="text" id="value1Output"/>
+  </p>
+  <p>2.
+    <input type="submit" value="Display value2" onclick="value2Func(document.getElementById('value2'), document.getElementById('value2Output'))"/>
+    Display the value you entered for value2:
+  <input type="text" id="value2Output"/>
+  </p>
+  <p>3.
+    <input type="submit" value="Multiply" onclick="multiplyFunc(document.getElementById('value1'), document.getElementById('value2'), document.getElementById('multiplyOutput'))"/>
+    Display the value of value1 * value2:
+  <input type="text" id="multiplyOutput"/>
+  </p>
+  <p>4.
+    <input type="submit" value="Add" onclick="addFunc(document.getElementById('value1'), document.getElementById('value2'), document.getElementById('addOutput'))"/>
+    Display the results of value1 + value2 in the following textfield.
+  <input type="text" id="addOutput"/>
+  </p>
+  <p>5.
+    <input type="submit" value="Increment count" onclick="incrementCount(document.getElementById('countOutput'))" />
+    Use the increment operator to add 1 to count and display the new value of count.
+  <input type="text" id="countOutput"/>
+  </p>
+  <p>
+    <input type="reset" id="Reset" id="button" value="Reset">
+  </p>
+</form>
+<p>&nbsp;</p>
+
+
+</body>
+</html>
